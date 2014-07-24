@@ -48,7 +48,7 @@ module Savon
       result.kind_of?(Array) ? result.compact : [result].compact
     end
 
-    def hash
+    def to_hash
       @hash ||= nori.parse(xml)
     end
 
